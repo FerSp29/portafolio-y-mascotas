@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h2></h2>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#proyectos">Proyectos</a>
+                </li><a href="#contacto">Contacto</a>
+                <li><a href="mascotas.html">Mis Mascotas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-hero">
+            <div class="hero-contenido">
+                <h1>Fernando S.</h1>
+
+                    <p class="hero-titulo">Desarrollador en Proceso</p>
+                    <p class="hero-description"><b>Apasionado por crear soluciones digitales innovadoras con código.</p>
+
+                    <a href="#proyectos" class="hero-boton">Ver mis Proyectos</a> 
+            </div>
+        </section>
+        <section id="sobre-mi">
+            <h2>Sobre mi</h2>
+            <div class="sobre-mi-contenedor"> <img src="img/fernando.jpg" alt="Fernando S. - Desarrollador" class="foto-perfil"> <div class="sobre-mi-texto">
+                <p>Hola soy Fernando. Un estudiante de programacion en Riwi y ando enfocado en aprender mas sobre el desarrollo web y todos los lenguajes que hay en programacion para crear soluciones que sean innovadoras para el mundo como startups y herramientas inteligentes.</p>
+            </div>
+
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+
+                <article class="proyecto-card">
+                <a href="#">Simulador de Logistica v1.0</a>
+                <p>Gestión de rutas y tiempos de entrega</p>
+                </article>
+                <article class="proyecto-card">
+                <a href="#">Dashboard de Monitoreo</a>
+                <p>Panel de control responsivo para las metricas</p>
+                </article>
+                <article class="proyecto-card">
+                <a href="#">Catalogo de Productos Dinamico</a>
+                <p>Estructura avanzada con filtros interactivos</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
