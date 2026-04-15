@@ -1,0 +1,307 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+    background-attachment: fixed;
+    color: #1a252f;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de encabezado centrados con sombra para profundidad */
+header {
+    background-color: #1a252f;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Menú siempre visible */
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    display: none; /* Ocultamos el título del menú para un diseño mas limpio */
+}
+
+/* Organización de menú de navegación con Flexbox/Inline */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para enlaces */
+nav a:hover {
+    color: #ffffff;
+}
+
+/* SECCIÓN DE PRESENTACIÓN (HERO) - Estilos para crear la división */
+.seccion-hero {
+    background-color: #ffffff;
+    padding: 120px 40px; /* Mucho espacio arriba y abajo para destacar */
+    text-align: center;
+    margin: 40px auto; /* Centrado en la página */
+    width: 900px;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave para darle "elevación" y división */
+}
+
+.hero-contenido h1 {
+    color: #1a252f;
+    font-size: 4rem; /* Nombre grande para impactar */
+    margin-bottom: 10px;
+    font-weight: 800;
+    letter-spacing: 1px; /* Para un toque mas moderno */
+    line-height: 1.2;
+}
+
+.hero-titulo {
+    color: #00d4ff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero-descripcion {
+    color: #64748b;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-weight: 400;
+}
+
+/* Estilo para el botón dentro de la sección hero */
+.hero-boton {
+    display: inline-block;
+    background-color: #1a252f;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-boton:hover {
+    background-color: #00d4ff;
+    color: #1a252f;
+    transform: translateY(-3px);
+}
+
+#sobre-mi {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 85%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+#proyectos {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 85%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+#contacto {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 85%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.sobre-mi-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+}
+
+.foto-perfil {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #1a252f;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.03);
+}
+
+.sobre-mi-texto p {
+    font-size: 1.3rem;
+    line-height: 2.0;
+    color: #2c3e50;
+    font-weight: 400;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.proyecto-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-card a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Aplicación del modelo de caja en secciones: margin, padding y border-radius */
+section {
+    background-color: #ffffff;
+    margin: 60px auto;
+    margin-bottom: 80px;
+    padding: 40px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    display: flow-root; /* Para contener floats si los hubiera */
+    overflow: hidden;
+}
+
+/* Layout de galería usando Flexbox para organizar elementos */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de tarjetas individuales de mascotas */
+article {
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    width: 300px;
+    flex-grow: 1;
+    max-width: 350px;
+}
+
+/* Efecto hover para interactividad en las tarjetas */
+article:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos de imagen con borde redondeado y object-fit */
+img {
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos de formularios Box-sizing y focus dinámico */
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #fcfcfc;
+    padding: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #00d4ff;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,212,255,0.2);
+    transform: scale(1.01);
+}
+
+/* Estilo de botón con cursor pointer y transición de color */
+button {
+    background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: #00d4ff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,212,255,0.4);
+}
